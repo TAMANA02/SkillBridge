@@ -1,0 +1,61 @@
+/*
+   SkillBridge — Design Tokens
+   Warm Neutral Editorial + Futuristic Marketplace
+   ========================================================================== */
+
+:root {
+  /* Surfaces */
+  --bg: #f6f3ee;
+  --bg-raised: #fbfaf8;
+  --surface: #ffffff;
+  --surface-alt: #eeeae3;
+  --surface-glass: rgba(255, 255, 255, 0.78);
+  --border: rgba(44, 52, 49, 0.12);
+  --border-strong: rgba(44, 52, 49, 0.22);
+
+  /* Text */
+  --text: #1f2926;
+  --text-dim: #66706b;
+  --text-faint: #9aa39d;
+
+  /* Text used on top of solid accent-colored surfaces (buttons, chips, etc.) */
+  --ink: #fffdf9;
+
+  /* Accents */
+  --lime: #52655f;
+  --lime-soft: rgba(82, 101, 95, 0.12);
+  --lime-dim: #3f504a;
+  --lavender: #7d8781;
+  --lavender-soft: rgba(125, 135, 129, 0.14);
+  --orange: #a88866;
+  --orange-soft: rgba(168, 136, 102, 0.16);
+
+  /* Status */
+  --success: #4f7c67;
+  --warning: #9a7642;
+  --danger: #a35757;
+
+  /* Shape */
+  --radius-lg: 24px;
+  --radius-md: 16px;
+  --radius-sm: 10px;
+  --radius-pill: 999px;
+
+  /* Shadow */
+  --shadow-lg: 0 40px 100px rgba(44, 52, 49, 0.14);
+  --shadow-md: 0 20px 50px rgba(44, 52, 49, 0.11);
+  --shadow-glow: 0 0 0 1px rgba(82, 101, 95, 0.25), 0 0 40px rgba(82, 101, 95, 0.1);
+
+  /* Motion */
+  --ease: cubic-bezier(0.22, 1, 0.36, 1);
+  --fast: 0.18s;
+  --med: 0.32s;
+
+  /* Type */
+  --font-body: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+  --font-display: 'Fraunces', Georgia, serif;
+
+  /* Layout */
+  --container: min(1240px, calc(100% - 2.5rem));
+  --nav-h: 76px;
+}

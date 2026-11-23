@@ -1,0 +1,420 @@
+/* ==========================================================================
+   Buttons
+   ========================================================================== */
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  padding: 0.85rem 1.5rem;
+  border-radius: var(--radius-pill);
+  font-weight: 600;
+  font-size: 0.92rem;
+  border: 1px solid transparent;
+  transition: transform var(--fast) var(--ease), background var(--fast), border-color var(--fast), color var(--fast);
+  white-space: nowrap;
+}
+
+.btn:active {
+  transform: scale(0.97);
+}
+
+.btn-primary {
+  background: var(--lime);
+  color: var(--ink);
+}
+
+.btn-primary:hover {
+  background: var(--lime-dim);
+}
+
+.btn-outline {
+  background: transparent;
+  border-color: var(--border-strong);
+  color: var(--text);
+}
+
+.btn-outline:hover {
+  border-color: var(--lime);
+  color: var(--lime);
+}
+
+.btn-muted {
+  background: var(--surface-alt);
+  color: var(--text-dim);
+}
+
+.btn-muted:hover {
+  color: var(--text);
+}
+
+.btn-ghost {
+  background: transparent;
+  color: var(--text-dim);
+  padding: 0.6rem 0.9rem;
+}
+
+.btn-ghost:hover {
+  color: var(--lime);
+}
+
+.btn-sm {
+  padding: 0.55rem 1.1rem;
+  font-size: 0.82rem;
+}
+
+.btn-block {
+  width: 100%;
+}
+
+.btn:disabled {
+  opacity: 0.45;
+  cursor: not-allowed;
+  transform: none;
+}
+
+.icon-button {
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  background: var(--surface-alt);
+  border: 1px solid var(--border);
+  color: var(--text);
+  transition: all var(--fast) var(--ease);
+  flex-shrink: 0;
+}
+
+.icon-button:hover {
+  border-color: var(--lime);
+  color: var(--lime);
+}
+
+.icon-button.voice-active {
+  background: var(--lime);
+  color: var(--ink);
+  animation: pulse-ring 1.4s ease-in-out infinite;
+}
+
+@keyframes pulse-ring {
+  0%, 100% { box-shadow: 0 0 0 0 rgba(82, 101, 95, 0.5); }
+  50% { box-shadow: 0 0 0 8px rgba(82, 101, 95, 0); }
+}
+
+/* ==========================================================================
+   Badges / pills
+   ========================================================================== */
+
+.badge-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  padding: 0.3rem 0.75rem;
+  border-radius: var(--radius-pill);
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  background: var(--lime-soft);
+  color: var(--lime);
+  border: 1px solid rgba(82, 101, 95, 0.25);
+}
+
+.badge-pill.lavender {
+  background: var(--lavender-soft);
+  color: var(--lavender);
+  border-color: rgba(125, 135, 129, 0.28);
+}
+
+.badge-pill.orange {
+  background: var(--orange-soft);
+  color: var(--orange);
+  border-color: rgba(168, 136, 102, 0.3);
+}
+
+.status-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  padding: 0.3rem 0.7rem;
+  border-radius: var(--radius-pill);
+  font-size: 0.76rem;
+  font-weight: 600;
+  border: 1px solid var(--border);
+  background: var(--surface-alt);
+  color: var(--text-dim);
+}
+
+.status-badge::before {
+  content: '';
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: currentColor;
+}
+
+.status-badge.active,
+.status-badge.completed,
+.status-badge.accepted {
+  color: var(--success);
+  border-color: rgba(79, 124, 103, 0.3);
+  background: rgba(79, 124, 103, 0.08);
+}
+
+.status-badge.pending,
+.status-badge.review {
+  color: var(--warning);
+  border-color: rgba(154, 118, 66, 0.3);
+  background: rgba(154, 118, 66, 0.08);
+}
+
+.status-badge.rejected {
+  color: var(--danger);
+  border-color: rgba(163, 87, 87, 0.3);
+  background: rgba(163, 87, 87, 0.08);
+}
+
+/* ==========================================================================
+   Cards
+   ========================================================================== */
+
+.card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  padding: 1.75rem;
+}
+
+.glass-card {
+  background: var(--surface-glass);
+  backdrop-filter: blur(20px);
+  border: 1px solid var(--border-strong);
+  border-radius: var(--radius-lg);
+}
+
+.card-hover {
+  transition: transform var(--med) var(--ease), border-color var(--fast), box-shadow var(--med);
+}
+
+.card-hover:hover {
+  transform: translateY(-4px);
+  border-color: rgba(82, 101, 95, 0.3);
+  box-shadow: var(--shadow-md);
+}
+
+/* ==========================================================================
+   Forms
+   ========================================================================== */
+
+.field-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1.1rem;
+}
+
+.field-group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.45rem;
+}
+
+.field-group.full {
+  grid-column: 1 / -1;
+}
+
+.field-group label {
+  font-size: 0.82rem;
+  font-weight: 600;
+  color: var(--text-dim);
+}
+
+.field-group label .req {
+  color: var(--lime);
+  margin-left: 0.2rem;
+}
+
+.field-group input,
+.field-group select,
+.field-group textarea {
+  background: var(--bg-raised);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-sm);
+  padding: 0.8rem 1rem;
+  color: var(--text);
+  transition: border-color var(--fast);
+  width: 100%;
+}
+
+.field-group input::placeholder,
+.field-group textarea::placeholder {
+  color: var(--text-faint);
+}
+
+.field-group input:focus,
+.field-group select:focus,
+.field-group textarea:focus {
+  border-color: var(--lime);
+  outline: none;
+}
+
+.field-group input.error,
+.field-group select.error,
+.field-group textarea.error {
+  border-color: var(--danger);
+}
+
+.field-error {
+  font-size: 0.76rem;
+  color: var(--danger);
+  min-height: 1em;
+}
+
+.field-group.password-field {
+  position: relative;
+}
+
+.password-toggle {
+  position: absolute;
+  right: 0.9rem;
+  top: 2.35rem;
+  background: none;
+  border: none;
+  color: var(--text-faint);
+  cursor: pointer;
+}
+
+.password-toggle:hover {
+  color: var(--lime);
+}
+
+.form-message {
+  padding: 0.75rem 1rem;
+  border-radius: var(--radius-sm);
+  font-size: 0.88rem;
+  font-weight: 500;
+}
+
+.form-message:empty {
+  display: none;
+}
+
+.form-message.success {
+  background: rgba(79, 124, 103, 0.1);
+  color: var(--success);
+  border: 1px solid rgba(79, 124, 103, 0.25);
+}
+
+.form-message.error {
+  background: rgba(163, 87, 87, 0.1);
+  color: var(--danger);
+  border: 1px solid rgba(163, 87, 87, 0.25);
+}
+
+.form-actions {
+  display: flex;
+  gap: 0.75rem;
+  flex-wrap: wrap;
+  margin-top: 1.5rem;
+}
+
+.checkbox-row {
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+  margin-top: 0.5rem;
+}
+
+.checkbox-row label {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  font-size: 0.86rem;
+  color: var(--text-dim);
+}
+
+.role-toggle {
+  display: flex;
+  gap: 0.75rem;
+}
+
+.role-option {
+  flex: 1;
+  border: 1px solid var(--border);
+  border-radius: var(--radius-md);
+  padding: 1.1rem;
+  text-align: center;
+  cursor: pointer;
+  transition: all var(--fast) var(--ease);
+  background: var(--bg-raised);
+}
+
+.role-option strong {
+  display: block;
+  margin-bottom: 0.25rem;
+}
+
+.role-option span {
+  font-size: 0.8rem;
+  color: var(--text-faint);
+}
+
+.role-option.selected {
+  border-color: var(--lime);
+  background: var(--lime-soft);
+  box-shadow: var(--shadow-glow);
+}
+
+.role-option.selected strong {
+  color: var(--lime);
+}
+
+/* ==========================================================================
+   Skeleton / loading / empty / error states
+   ========================================================================== */
+
+.skeleton {
+  background: linear-gradient(90deg, var(--surface) 25%, var(--surface-alt) 50%, var(--surface) 75%);
+  background-size: 200% 100%;
+  animation: shimmer 1.4s infinite;
+  border-radius: var(--radius-md);
+}
+
+@keyframes shimmer {
+  0% { background-position: 200% 0; }
+  100% { background-position: -200% 0; }
+}
+
+.state-block {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.85rem;
+  padding: 3rem 1.5rem;
+  text-align: center;
+  color: var(--text-dim);
+  border: 1px dashed var(--border-strong);
+  border-radius: var(--radius-lg);
+}
+
+.state-block .state-icon {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  background: var(--surface-alt);
+  color: var(--lime);
+}
+
+.state-block.error .state-icon {
+  color: var(--danger);
+}
+
+.state-block h4 {
+  font-family: var(--font-body);
+  font-size: 1rem;
+  color: var(--text);
+}

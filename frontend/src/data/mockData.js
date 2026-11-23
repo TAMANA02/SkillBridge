@@ -1,0 +1,385 @@
+// Mock/demo data mirroring the original SkillBridge static content.
+// Once the Django REST API is live, replace these with calls through src/services/api.js.
+
+export const studentProfiles = [
+  { name: 'Rohan Kumar', studentId: 'STU-1024', skills: 'React, Node.js, UI/UX', college: 'IIT Delhi', year: 'Final Year', portfolio: 'E-commerce platform, Dashboard UI' },
+  { name: 'Aisha Rao', studentId: 'STU-1019', skills: 'HTML, CSS, JavaScript, Figma', college: 'NIT Trichy', year: 'Third Year', portfolio: 'Campus event booking interface' },
+  { name: 'Nikhil Sharma', studentId: 'STU-1032', skills: 'Python, Django, Machine Learning', college: 'IIT Bombay', year: 'Final Year', portfolio: 'AI resume ranking tool' },
+  { name: 'Meera Joshi', studentId: 'STU-1041', skills: 'Graphic Design, Figma, Webflow', college: 'BITS Pilani', year: 'Second Year', portfolio: 'Brand identity and marketing landing page' },
+];
+
+export const showcaseProjects = [
+  { title: 'Campus Commerce', category: 'Web Development', tags: ['React', 'Stripe', 'UI'], score: 92, position: '1st', visibility: 'Public', categoryLabel: 'E-commerce', techStack: 'React / Node.js', communityRating: '4.9/5', clientFeedback: 'Excellent', clientStatus: 'Completed', skills: 'Frontend, Backend', status: 'Featured', budget: '\u20b930k - \u20b945k', deadline: '2 weeks' },
+  { title: 'AI Resume Scout', category: 'AI Development', tags: ['Python', 'ML', 'Flask'], score: 88, position: '2nd', visibility: 'Private', categoryLabel: 'AI', techStack: 'Python / Django', communityRating: '4.8/5', clientFeedback: 'Very good', clientStatus: 'In Review', skills: 'ML, Python', status: 'Popular', budget: '\u20b940k - \u20b960k', deadline: '3 weeks' },
+  { title: 'Design Studio Landing', category: 'UI/UX Design', tags: ['Figma', 'Webflow', 'Brand'], score: 84, position: '3rd', visibility: 'Public', categoryLabel: 'Design', techStack: 'Figma / Webflow', communityRating: '4.7/5', clientFeedback: 'Polished', clientStatus: 'Completed', skills: 'UI/UX, Branding', status: 'Trending', budget: '\u20b912k - \u20b920k', deadline: '1 week' },
+  { title: 'Social Boost Campaign', category: 'Digital Marketing', tags: ['SEO', 'Ads', 'Analytics'], score: 81, position: '4th', visibility: 'Public', categoryLabel: 'Marketing', techStack: 'Meta Ads / Analytics', communityRating: '4.6/5', clientFeedback: 'Great reach', clientStatus: 'Completed', skills: 'Marketing, Content', status: 'Active', budget: '\u20b910k - \u20b918k', deadline: '1 week' },
+];
+
+export const leaderboardItems = {
+  weekly: [{ title: 'Campus Commerce', score: '92/100' }, { title: 'AI Resume Scout', score: '88/100' }],
+  monthly: [{ title: 'Design Studio Landing', score: '94/100' }, { title: 'Campus Commerce', score: '91/100' }],
+  innovators: [{ name: 'Rohan Kumar', score: '98' }, { name: 'Aisha Rao', score: '95' }],
+  colleges: [{ name: 'IIT Delhi', score: '120' }, { name: 'NIT Trichy', score: '103' }],
+  active: [{ name: 'Nikhil Sharma', score: '68 projects' }, { name: 'Meera Joshi', score: '54 projects' }],
+};
+
+export const services = [
+  { name: 'Frontend Development', description: 'Build fast, responsive interfaces with modern web frameworks and polished UI.' },
+  { name: 'Backend Development', description: 'Create robust APIs, business logic, and scalable server-side solutions.' },
+  { name: 'Full Stack Development', description: 'Deliver end-to-end applications with coordinated frontend and backend execution.' },
+  { name: 'React Development', description: 'Build reusable, interactive UI components with React and modern state management.' },
+  { name: 'HTML CSS JavaScript', description: 'Craft clean, accessible web experiences using standard web technologies.' },
+  { name: 'Django Development', description: 'Build secure, data-driven applications using Django and Python best practices.' },
+  { name: 'Node.js Development', description: 'Power backend services with efficient Node.js APIs and real-time systems.' },
+  { name: 'API Development', description: 'Design RESTful and GraphQL APIs for seamless application integration.' },
+  { name: 'Database Integration', description: 'Connect applications to reliable databases with efficient data workflows.' },
+  { name: 'Authentication Integration', description: 'Implement secure login and access controls across user applications.' },
+  { name: 'Bug Fixing', description: 'Resolve issues quickly with clean debugging and stable code updates.' },
+  { name: 'Deployment', description: 'Deploy projects reliably to modern hosting environments with strong tooling.' },
+  { name: 'UI/UX Design', description: 'Create thoughtful interfaces with user-first visuals and intuitive layouts.' },
+  { name: 'Graphic Design', description: 'Design polished brand assets, marketing visuals, and product graphics.' },
+  { name: 'Video Editing', description: 'Produce clean video content for promotions, demos, and social campaigns.' },
+  { name: 'Content Writing', description: 'Deliver strong copy and technical writing for digital stories and product pages.' },
+  { name: 'AI Project Completion', description: 'Help complete AI-generated or partially built applications into production-ready releases.', href: '/ai-project-completion' },
+  { name: 'Machine Learning', description: 'Create predictive systems using modern data science and ML frameworks.' },
+  { name: 'Cloud & DevOps', description: 'Manage deployments, CI/CD, and cloud infrastructure for production readiness.' },
+  { name: 'Cyber Security', description: 'Protect applications with secure development practices and threat prevention.' },
+  { name: 'SEO', description: 'Optimize web presence and content for search visibility and performance.' },
+  { name: 'Digital Marketing', description: 'Design campaigns that reach audiences with data-informed strategy.' },
+];
+
+export const aiProjectCompletionItems = [
+  'Backend Development', 'Database Integration', 'Authentication System', 'REST API Development',
+  'API Integration', 'Dashboard Development', 'Admin Panel Development', 'Payment Gateway Integration',
+  'Bug Fixing', 'Performance Optimization', 'Deployment', 'Cloud Hosting', 'Testing', 'Production Ready Configuration',
+];
+
+export const voiceCommands = [
+  'Open Home', 'Open Services', 'Open About', 'Open Contact', 'Open Login', 'Open Student Registration',
+  'Open Client Registration', 'Open Student Dashboard', 'Open Client Dashboard', 'Open Project Showcase',
+  'Open Smart Search', 'Open Hall of Fame', 'Open AI Project Completion', 'Open Profile', 'Open Settings',
+  'Go Back', 'Go Home', 'Scroll Down', 'Scroll Up', 'Refresh Page',
+];
+
+export const studentDashboardStats = {
+  profileCompletion: '78%',
+  recentProjects: 4,
+  experienceEntries: 3,
+  resumeUploaded: true,
+};
+
+export const studentJobs = [
+  { title: 'Web App Redesign', description: 'Refresh an existing platform for a modern client experience.', tags: 'UI/UX \u2022 Frontend' },
+  { title: 'API Integration', description: 'Connect a service layer to a growing SaaS product.', tags: 'Node \u2022 API' },
+];
+
+export const studentProjects = [
+  { title: 'Campus Commerce', description: 'Modern e-commerce experience for campus marketplace.', tags: 'React \u2022 Node' },
+  { title: 'AI Resume Scout', description: 'Resume ranking tool with machine learning insights.', tags: 'Python \u2022 Django' },
+  { title: 'Design Studio Landing', description: 'High-converting landing page for a creative agency.', tags: 'Figma \u2022 Webflow' },
+];
+
+export const studentNotifications = [
+  { title: 'New invitation', message: 'A client invited you to a UI redesign project.' },
+  { title: 'Profile reminder', message: 'Add your latest project to improve visibility.' },
+];
+
+export const studentInvitations = [
+  { title: 'Landing page refresh', status: 'Pending' },
+  { title: 'Dashboard optimization', status: 'Accepted' },
+];
+
+export const clientDashboardStats = {
+  activeProjects: 3,
+  pendingApplications: 2,
+  hiredStudents: 5,
+  invitationsSent: 7,
+};
+
+export const clientProjects = [
+  { title: 'UI Redesign Sprint', status: 'Active' },
+  { title: 'Backend API Setup', status: 'Pending' },
+  { title: 'Mobile Landing Experience', status: 'Review' },
+];
+
+export const clientNotifications = [
+  { title: 'New application', message: 'A student applied for the UI redesign sprint.' },
+  { title: 'Project update', message: 'The backend API setup is awaiting feedback.' },
+];
+
+export const clientInvitations = [
+  { title: 'Invite to UI Redesign', status: 'Sent' },
+  { title: 'Invite to Landing Experience', status: 'Responded' },
+];
+
+export const publicDevelopers = [
+  {
+    id: 'amaya-kapoor',
+    name: 'Amaya Kapoor',
+    initials: 'AK',
+    title: 'Full Stack Developer & UI/UX Designer',
+    college: 'Indian Institute of Technology',
+    location: 'Bengaluru, India',
+    rating: 4.9,
+    projects: 38,
+    successRate: '95%',
+    responseRate: '1.2h',
+    availability: 'Available now',
+    skills: ['React', 'Node.js', 'Python', 'Figma'],
+    verified: true,
+    followers: '1.8k',
+    image: 'https://images.unsplash.com/photo-1524504388940-b1c1722653e1?auto=format&fit=crop&w=500&q=85',
+    bio: 'Builds calm, high-converting product experiences from interface to API.',
+  },
+  {
+    id: 'rohan-kumar',
+    name: 'Rohan Kumar',
+    initials: 'RK',
+    title: 'React & Node.js Developer',
+    college: 'IIT Delhi',
+    location: 'New Delhi, India',
+    rating: 4.8,
+    projects: 24,
+    successRate: '93%',
+    responseRate: '2.4h',
+    availability: 'Available this week',
+    skills: ['React', 'Node.js', 'MongoDB', 'UI/UX'],
+    verified: true,
+    followers: '956',
+    image: 'https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?auto=format&fit=crop&w=500&q=85',
+    bio: 'Product-minded frontend engineer who turns complex flows into friendly interfaces.',
+  },
+  {
+    id: 'aisha-rao',
+    name: 'Aisha Rao',
+    initials: 'AR',
+    title: 'Frontend Developer & Visual Designer',
+    college: 'NIT Trichy',
+    location: 'Chennai, India',
+    rating: 4.7,
+    projects: 19,
+    successRate: '91%',
+    responseRate: '3.1h',
+    availability: 'Open to projects',
+    skills: ['JavaScript', 'Figma', 'Webflow', 'CSS'],
+    verified: true,
+    followers: '742',
+    image: 'https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&w=500&q=85',
+    bio: 'Designs and ships accessible web interfaces for early-stage teams.',
+  },
+  {
+    id: 'nikhil-sharma',
+    name: 'Nikhil Sharma',
+    initials: 'NS',
+    title: 'Python, Django & ML Developer',
+    college: 'IIT Bombay',
+    location: 'Mumbai, India',
+    rating: 4.9,
+    projects: 31,
+    successRate: '97%',
+    responseRate: '1.8h',
+    availability: 'Available now',
+    skills: ['Python', 'Django', 'Machine Learning', 'PostgreSQL'],
+    verified: true,
+    followers: '1.1k',
+    image: 'https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=500&q=85',
+    bio: 'Builds dependable data products, APIs, and intelligent workflow automation.',
+  },
+];
+
+export const teams = [
+  {
+    slug: 'team-nova',
+    name: 'Team Nova',
+    college: 'IIT Delhi',
+    location: 'New Delhi, India',
+    description: 'A cross-functional product squad for ambitious web and mobile launches.',
+    leader: 'Rohan Kumar',
+    members: [
+      { name: 'Rohan Kumar', role: 'Full Stack Lead', initials: 'RK' },
+      { name: 'Aisha Rao', role: 'Product Designer', initials: 'AR' },
+      { name: 'Kabir Mehta', role: 'Backend Engineer', initials: 'KM' },
+    ],
+    skills: ['React', 'Node.js', 'Figma', 'PostgreSQL'],
+    completed: 16,
+    rating: 4.9,
+    successRate: '96%',
+    availability: 'Taking new projects',
+    verified: true,
+    image: 'https://images.unsplash.com/photo-1521737711867-e3b97375f902?auto=format&fit=crop&w=900&q=85',
+    featured: true,
+  },
+  {
+    slug: 'byte-builders',
+    name: 'Byte Builders',
+    college: 'NIT Trichy',
+    location: 'Tiruchirappalli, India',
+    description: 'Developers and designers creating practical tools for education and community.',
+    leader: 'Aisha Rao',
+    members: [
+      { name: 'Aisha Rao', role: 'Design Lead', initials: 'AR' },
+      { name: 'Dev Malhotra', role: 'React Developer', initials: 'DM' },
+      { name: 'Sara Iyer', role: 'QA & Research', initials: 'SI' },
+    ],
+    skills: ['JavaScript', 'Webflow', 'React', 'Research'],
+    completed: 12,
+    rating: 4.8,
+    successRate: '93%',
+    availability: 'Available next month',
+    verified: true,
+    image: 'https://images.unsplash.com/photo-1556761175-b413da4baf72?auto=format&fit=crop&w=900&q=85',
+    featured: false,
+  },
+  {
+    slug: 'ai-forge',
+    name: 'AI Forge',
+    college: 'IIT Bombay',
+    location: 'Mumbai, India',
+    description: 'Applied AI builders helping clients take machine-learning ideas into production.',
+    leader: 'Nikhil Sharma',
+    members: [
+      { name: 'Nikhil Sharma', role: 'ML Lead', initials: 'NS' },
+      { name: 'Meera Joshi', role: 'Data Engineer', initials: 'MJ' },
+      { name: 'Arjun Shah', role: 'Product Engineer', initials: 'AS' },
+    ],
+    skills: ['Python', 'Django', 'ML', 'Data Science'],
+    completed: 21,
+    rating: 4.9,
+    successRate: '97%',
+    availability: 'Taking new projects',
+    verified: true,
+    image: 'https://images.unsplash.com/photo-1551434678-e076c223a692?auto=format&fit=crop&w=900&q=85',
+    featured: true,
+  },
+];
+
+export const colleges = [
+  {
+    slug: 'iit-delhi',
+    rank: 1,
+    name: 'IIT Delhi',
+    city: 'New Delhi, India',
+    score: 96,
+    developers: 184,
+    teams: 26,
+    projects: 48,
+    rating: 4.8,
+    successRate: '96%',
+    trend: '+12%',
+    accent: '#52655f',
+    summary: 'A high-performing community of product builders known for dependable delivery and thoughtful design.',
+    topDevelopers: ['Rohan Kumar', 'Amaya Kapoor', 'Kabir Mehta'],
+    topTeams: ['Team Nova', 'Launch Lab'],
+  },
+  {
+    slug: 'iit-bombay',
+    rank: 2,
+    name: 'IIT Bombay',
+    city: 'Mumbai, India',
+    score: 93,
+    developers: 161,
+    teams: 21,
+    projects: 41,
+    rating: 4.8,
+    successRate: '94%',
+    trend: '+9%',
+    accent: '#7d8781',
+    summary: 'A strong AI and engineering network turning research fluency into practical client outcomes.',
+    topDevelopers: ['Nikhil Sharma', 'Meera Joshi', 'Arjun Shah'],
+    topTeams: ['AI Forge', 'Data Dock'],
+  },
+  {
+    slug: 'nit-trichy',
+    rank: 3,
+    name: 'NIT Trichy',
+    city: 'Tiruchirappalli, India',
+    score: 91,
+    developers: 142,
+    teams: 18,
+    projects: 37,
+    rating: 4.7,
+    successRate: '92%',
+    trend: '+15%',
+    accent: '#a88866',
+    summary: 'A growing design and development community with an impressive record of collaborative delivery.',
+    topDevelopers: ['Aisha Rao', 'Dev Malhotra', 'Sara Iyer'],
+    topTeams: ['Byte Builders', 'Pixel Guild'],
+  },
+  {
+    slug: 'bits-pilani',
+    rank: 4,
+    name: 'BITS Pilani',
+    city: 'Pilani, India',
+    score: 88,
+    developers: 128,
+    teams: 16,
+    projects: 32,
+    rating: 4.6,
+    successRate: '90%',
+    trend: '+7%',
+    accent: '#9a7642',
+    summary: 'A versatile student talent network spanning brand, product, engineering, and growth disciplines.',
+    topDevelopers: ['Meera Joshi', 'Ishita Nair', 'Yash Bhat'],
+    topTeams: ['Studio 404', 'Orbit Works'],
+  },
+];
+
+export const feedPosts = [
+  {
+    id: 'post-1',
+    author: 'Amaya Kapoor',
+    authorTitle: 'Full Stack Developer & UI/UX Designer',
+    college: 'IIT Delhi',
+    initials: 'AK',
+    avatar: 'https://images.unsplash.com/photo-1524504388940-b1c1722653e1?auto=format&fit=crop&w=160&q=85',
+    timestamp: '2h ago',
+    text: 'Just shipped the first public beta of CampusConnect — a collaboration hub that helps student teams turn scattered ideas into visible progress. The biggest lesson: clarity is a feature.',
+    tags: ['React', 'Product Design', 'Student Teams'],
+    image: 'https://images.unsplash.com/photo-1558655146-d09347e92766?auto=format&fit=crop&w=1000&q=85',
+    project: 'CampusConnect',
+    likes: 184,
+    comments: 28,
+    shares: 12,
+    liked: false,
+    saved: false,
+    following: true,
+  },
+  {
+    id: 'post-2',
+    author: 'Nikhil Sharma',
+    authorTitle: 'Python, Django & ML Developer',
+    college: 'IIT Bombay',
+    initials: 'NS',
+    avatar: 'https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=160&q=85',
+    timestamp: '5h ago',
+    text: 'Our team benchmarked three approaches for an AI resume ranking workflow. Sharing the result because good engineering decisions get better when the trade-offs are visible.',
+    tags: ['Python', 'Machine Learning', 'Open Source'],
+    image: 'https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=1000&q=85',
+    project: 'AI Resume Scout',
+    likes: 146,
+    comments: 19,
+    shares: 21,
+    liked: true,
+    saved: true,
+    following: false,
+  },
+  {
+    id: 'post-3',
+    author: 'Team Nova',
+    authorTitle: 'Product squad from IIT Delhi',
+    college: 'IIT Delhi',
+    initials: 'TN',
+    avatar: 'https://images.unsplash.com/photo-1521737711867-e3b97375f902?auto=format&fit=crop&w=160&q=85',
+    timestamp: 'Yesterday',
+    text: 'We are opening two spots for a designer or frontend developer who enjoys shipping quickly, documenting decisions, and building for real users.',
+    tags: ['Team Hiring', 'React', 'Figma'],
+    image: 'https://images.unsplash.com/photo-1552664730-d307ca884978?auto=format&fit=crop&w=1000&q=85',
+    project: 'Team Nova',
+    likes: 98,
+    comments: 14,
+    shares: 8,
+    liked: false,
+    saved: false,
+    following: false,
+  },
+];
